@@ -21,7 +21,10 @@ class HelloSub(Node):
 def main(args=None):
     rclpy.init(args=None)
     hello_sub = HelloSub()
-    rclpy.spin(hello_sub)
+    try:
+        rclpy.spin(hello_sub)
+    except KeyboardInterrupt:
+        print('killing process...')
     hello_sub.destroy_node()
     rclpy.shutdown()
 
