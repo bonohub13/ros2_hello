@@ -8,3 +8,6 @@
 - [January 20th, 2020]
 	- added Hello World! for ROS2 packages
 	- repository made public
+
+- [February 5th, 2020]
+	- added publisher ("Hello World!") for ROS2 packages written in C++
