@@ -11,3 +11,6 @@
 
 - [February 5th, 2020]
 	- added publisher ("Hello World!") for ROS2 packages written in C++
+
+- [February 6th, 2020]
+	- added subscriber for ROS2 package "Hello World!" written in C++
