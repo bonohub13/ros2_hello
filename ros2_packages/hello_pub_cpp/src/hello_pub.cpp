@@ -27,7 +27,7 @@ void HelloPub::timerCB()
 {
 	msg->data = "Hello World!";
 	RCLCPP_INFO(this->get_logger(), "Publishing: %s", msg.data.c_str());
-	pub->publish(msg);
+	pub->publish(*msg);
 }
 
 int main(int argc, char *argv[])
