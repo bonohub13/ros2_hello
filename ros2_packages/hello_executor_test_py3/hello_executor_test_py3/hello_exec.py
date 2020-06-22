@@ -1,8 +1,8 @@
 # hello_executor_test_py3
 import rclpy
 from rclpy.executors import SingleThreadedExecutor, MultiThreadedExecutor
-import hello_pub
-import hello_sub
+from hello_test_pub_py3 import hello_pub
+from hello_test_sub_py3 import hello_sub
 
 # For checking the behavior of how executors works!
 # If you're going to add anything to this code make sure to add a comment to each line!

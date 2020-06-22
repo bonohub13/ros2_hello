@@ -7,8 +7,8 @@
   <maintainer email="ken.saito.0813@gmail.com">kensuke</maintainer>
   <license>TODO: License declaration</license>
 
-  <!--depend>hello_test_pub_py3</depend-->
-  <!--depend>hello_test_sub_py3</depend-->
+  <depend>hello_test_pub_py3</depend>
+  <depend>hello_test_sub_py3</depend>
   <depend>std_msgs</depend>
   <depend>rclpy</depend>
 
