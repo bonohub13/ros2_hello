@@ -14,3 +14,7 @@
 
 - [February 6th, 2020]
 	- added subscriber for ROS2 package "Hello World!" written in C++
+- [June 22nd, 2020]
+	- removed every existed ROS2 package before June 22nd, 2020 and overwrote them with the current packages
+		- [further plans]:
+			- add C++ version for every packages under _ros2\_pakages_ directory written in python3

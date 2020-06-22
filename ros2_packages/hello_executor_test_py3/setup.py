@@ -1,10 +1,10 @@
 from setuptools import setup
 
-package_name = 'hello_pub_py3'
+package_name = 'hello_executor_test_py3'
 
 setup(
     name=package_name,
-    version='0.0.1',
+    version='0.0.0',
     packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
@@ -13,14 +13,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Kensuke Saito',
+    maintainer='kensuke',
     maintainer_email='ken.saito.0813@gmail.com',
-    description='\"Hello World!\" in ROS2 (publisher only)',
-    license='MIT License',
+    description='TODO: Package description',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'hello_pub = hello_pub_py3.hello_pub:main'
+            'hello_executor_test = hello_executor_test_py3.hello_exec:main'
         ],
     },
 )
