@@ -7,7 +7,7 @@ from rclpy.node import Node
 from rclpy.executors import MultiThreadedExecutor
 from std_msgs.msg import String
 
-# For checking the behavior of how the subscriber works!
+# For checking the behavior of how the publisher works!
 # If you're going to add anything to this code make sure to add a comment to each line!
 # Specification for comments:
 # 1. The goal for why the line was added for the first place

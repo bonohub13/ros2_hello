@@ -18,3 +18,7 @@
 	- removed every existed ROS2 package before June 22nd, 2020 and overwrote them with the current packages
 		- [further plans]:
 			- add C++ version for every packages under _ros2\_packages_ directory written in python3
+- [June 28th, 2020]
+	- added C++ version for the <i>hello\_action\_test\_py3</i> package
+		- Note:
+			- The C++ version (<i>hello\_action\_test\_cpp</i>) does not contain enough comment to explain the entire code yet. Will be added in further update.

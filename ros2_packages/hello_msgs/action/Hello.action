@@ -1,0 +1,8 @@
+# Goal (Desired result)
+string hello_goal # expected result
+---
+# Result (Current result)
+string status # current result
+---
+# Feedback (Report to client the current result)
+string status # status report to client current process
