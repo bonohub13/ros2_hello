@@ -22,3 +22,5 @@
 	- added C++ version for the <i>hello\_action\_test\_py3</i> package
 		- Note:
 			- The C++ version (<i>hello\_action\_test\_cpp</i>) does not contain enough comment to explain the entire code yet. Will be added in further update.
+- [Jun 29th, 2020]
+	- added C++ version for <i>hello\_test\_pub\_py3</i> and <i>hello\_test\_sub\_py3</i>
