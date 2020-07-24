@@ -65,18 +65,21 @@ void HelloClient::send_goal()
     }
 
     auto goal_msg = Hello::Goal();
-    goal_msg.hello_goal = "Hello World!";
+    auto send_goal_options = rclcpp_action::Client<Hello>::SendGoalOptions();
+	std::shared_future<std::shared_ptr<GoalHandleHello>> goal_handle_future;
+    
+	goal_msg.hello_goal = "Hello World!";
 
     RCLCPP_INFO(this->get_logger(), "Sending goal to server");
-    
-    auto send_goal_options = rclcpp_action::Client<Hello>::SendGoalOptions();
+
     send_goal_options.goal_response_callback =
         std::bind(&HelloClient::goal_responseCB, this, _1);
     send_goal_options.feedback_callback =
         std::bind(&HelloClient::feedbackCB, this, _1, _2);
     send_goal_options.result_callback =
         std::bind(&HelloClient::resultCB, this, _1);
-    auto goal_handle_future =
+
+	goal_handle_future =
         this->action_client->async_send_goal(goal_msg, send_goal_options);
 }
 void HelloClient::goal_responseCB(std::shared_future<GoalHandleHello::SharedPtr> future)
